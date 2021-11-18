@@ -1,4 +1,4 @@
-From e69f6e09e2ac4c80ae164f70518b11b1ff6eba58 Mon Sep 17 00:00:00 2001
+From a3a84116d38e0c4361094ce6e7549295027ea438 Mon Sep 17 00:00:00 2001
 From: Frank Hunleth <fhunleth@troodon-software.com>
 Date: Tue, 11 Sep 2018 12:28:41 -0400
 Subject: [PATCH] erlang: support OTP 20 - 24
@@ -1230,7 +1230,7 @@ index 3c2f039496..2f903c4e6b 100644
 +sha256 897dd8b66c901bfbce09ed64e0245256aca9e6e9bdf78c36954b9b7117192519  OTP-20.3.8.9.tar.gz
  sha256 809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0  LICENSE.txt
 diff --git a/package/erlang/erlang.mk b/package/erlang/erlang.mk
-index bcca6572cd..4ddb1e8029 100644
+index c0c9d327c3..3b5ea91aa6 100644
 --- a/package/erlang/erlang.mk
 +++ b/package/erlang/erlang.mk
 @@ -5,7 +5,24 @@
@@ -1258,8 +1258,8 @@ index bcca6572cd..4ddb1e8029 100644
 +
  ERLANG_SITE = https://github.com/erlang/otp/archive
  ERLANG_SOURCE = OTP-$(ERLANG_VERSION).tar.gz
- 
-@@ -36,7 +53,23 @@ HOST_ERLANG_PRE_CONFIGURE_HOOKS += ERLANG_RUN_AUTOCONF
+ ERLANG_DEPENDENCIES = host-erlang
+@@ -37,7 +54,23 @@ HOST_ERLANG_PRE_CONFIGURE_HOOKS += ERLANG_RUN_AUTOCONF
  
  # Whenever updating Erlang, this value should be updated as well, to the
  # value of EI_VSN in the file lib/erl_interface/vsn.mk
