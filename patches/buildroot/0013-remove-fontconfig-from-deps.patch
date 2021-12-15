@@ -1,8 +1,6 @@
-diff --git a/package/qt5/qt5webengine/Config.in b/package/qt5/qt5webengine/Config.in
-index 4e923c7f31..d5ad2d13ef 100644
---- a/package/qt5/qt5webengine/Config.in
-+++ b/package/qt5/qt5webengine/Config.in
-@@ -47,7 +47,6 @@ config BR2_PACKAGE_QT5WEBENGINE
+--- a/package/qt5/qt5webengine/Config.in        2021-12-15 23:03:51.440000000 +0100
++++ b/package/qt5/qt5webengine/Config.in        2021-12-15 23:02:54.870000000 +0100
+@@ -47,7 +47,6 @@
         select BR2_PACKAGE_WEBP_DEMUX
         select BR2_PACKAGE_QT5BASE_DBUS
         select BR2_PACKAGE_QT5BASE_EGLFS
@@ -10,4 +8,3 @@ index 4e923c7f31..d5ad2d13ef 100644
         select BR2_PACKAGE_QT5BASE_ICU
         select BR2_PACKAGE_QT5BASE_GUI
         select BR2_PACKAGE_QT5BASE_WIDGETS
-
